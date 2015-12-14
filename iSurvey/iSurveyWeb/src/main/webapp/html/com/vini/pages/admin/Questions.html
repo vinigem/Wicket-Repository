@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:wicket>
+<head>
+<meta charset="ISO-8859-1">
+</head>
+<wicket:extend>
+	<div id="envelope">
+		<header>
+			<h2>Uploaded Questions</h2>
+			<p>Please validate the uploaded questions.</p>
+		</header>
+		<hr>
+		<div wicket:id="questionContainer" style="margin-top: -10px">
+			<table class="pure-table pure-table-horizontal">
+				<thead>
+					<tr>
+						<th>No.</th>
+						<th>Question</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr wicket:id="questionView">
+						<td width="3%"><span wicket:id="index"></span></td>
+						<td width="95%"><span wicket:id="question"></span></td>
+						<td width="5%"><a wicket:id="delete"><img alt="Delete"
+								src="images/delete.png" height="18px" width="18px"></a></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3"><span wicket:id="pagingNavigator"></span></td>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="buttons-container-bottom-right">
+				<a wicket:id="reset" class="button-link">Reset</a> <a
+					wicket:id="submit" class="button-link">Save</a>
+			</div>
+		</div>
+	</div>
+
+</wicket:extend>
+</html>

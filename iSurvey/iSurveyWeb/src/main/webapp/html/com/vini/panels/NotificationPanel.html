@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:wicket>
+<wicket:panel>
+	<div wicket:id="validationContainer">
+		<div class="notification-container-validation notification-validation"
+			wicket:id="validationMessageContainer">
+			<a href="#" class="close" wicket:id="validationClose"><img
+				src="images/icons/close.png" width="18px" height="18px" /></a>
+			<ul wicket:id="validationMessages">
+				<li wicket:id="validationMessage"></li>
+			</ul>
+		</div>
+	</div>
+	<div wicket:id="notificationContainer" class="notification-container">
+		<a href="#" class="notification-close" wicket:id="notificationClose"><img
+			src="images/icons/close.png" width="15px" height="15px" /></a>
+		<div wicket:id="infoMessage" class="notification-info"></div>
+		<div wicket:id="successMessage" class="notification-success"></div>
+		<div wicket:id="warningMessage" class="notification-warning"></div>
+		<div wicket:id="errorMessage" class="notification-error"></div>
+	</div>
+</wicket:panel>
+</html>

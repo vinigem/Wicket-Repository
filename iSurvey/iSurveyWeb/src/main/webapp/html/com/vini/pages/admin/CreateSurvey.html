@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:wicket>
+<head>
+<meta charset="ISO-8859-1">
+</head>
+<wicket:extend>
+	<div id="envelope">
+		<header>
+			<h2>Create Survey</h2>
+			<p>Please fill the details of the Survey.</p>
+		</header>
+		<hr>
+		<form wicket:id="form">
+			<label>Survey Name </label> <input type="text" wicket:id="surveyName"
+				placeholder="Survey Name" width="100px;" /> <label>Start
+				Date</label> <input type="text" wicket:id="startDate"
+				placeholder="Start Date" /> <label>End Date</label> <input
+				type="text" wicket:id="endDate" placeholder="End Date" /> <label>Description</label>
+			<textarea wicket:id="description" rows="5" cols="15"
+				placeholder="Survey Description"></textarea>
+
+			<a wicket:id="submit" id="submit" class="button-link">Submit</a>
+		</form>
+	</div>
+
+</wicket:extend>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:wicket>
+<head>
+<meta charset="ISO-8859-1">
+</head>
+<wicket:extend>
+	<div id="envelope">
+		<header>
+			<h2>Upload Questions</h2>
+			<p>Please upload questions for the Survey.</p>
+		</header>
+		<hr>
+		<div class="excelContainer">
+			<a wicket:id="template"> <img alt="Template"
+				src="images/excel_icon.png" height="30px" width="30px"
+				title="Template to upload questions.">
+			</a>
+		</div>
+		<form wicket:id="form">
+			<label>Question Set Name </label> <input type="text"
+				wicket:id="questionSetName" placeholder="Question Set Name"
+				width="100px;" /> <label>File</label> <input type="file"
+				wicket:id="upload" placeholder="File to be uploaded" /> <a
+				wicket:id="submit" class="button-link">Upload</a> <a
+				wicket:id="view" class="button-link">View Questions</a> <br /> <br />
+			<span wicket:id="progress">[[upload progressbar]]</span>
+		</form>
+	</div>
+
+</wicket:extend>
+</html>

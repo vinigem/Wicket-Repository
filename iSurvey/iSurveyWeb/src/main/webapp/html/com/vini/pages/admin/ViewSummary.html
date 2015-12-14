@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:wicket>
+<head>
+<meta charset="ISO-8859-1">
+</head>
+<wicket:extend>
+	<div id="envelope">
+		<header>
+			<h2>View Survey Summary</h2>
+		</header>
+		<hr>
+		<form wicket:id="form" style="width: 90%">
+			<label>Survey Name: </label> <select wicket:id="surveys"></select>
+
+			<div class="inline-bar">
+				<label>Select Graph Type: </label>
+				<div wicket:id="graphTypes">
+					<input type="radio" wicket:id="pie" />Pie Graph <input
+						type="radio" wicket:id="bar" />Bar Graph
+				</div>
+			</div>
+
+		</form>
+		<div wicket:id="graphContainer" style="text-align: center;">
+			<table>
+				<tbody>
+					<tr wicket:id="userSurveyDetailView">
+						<td><span wicket:id="question"></span> <img wicket:id="image"
+							width="1000px" height="300px" /></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3"><span wicket:id="pagingNavigator"></span></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+</wicket:extend>
+</html>

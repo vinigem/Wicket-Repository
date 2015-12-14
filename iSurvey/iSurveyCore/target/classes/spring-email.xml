@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:int="http://www.springframework.org/schema/integration"
+	xmlns:mail="http://www.springframework.org/schema/integration/mail"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration.xsd
+                    http://www.springframework.org/schema/integration/mail http://www.springframework.org/schema/integration/mail/spring-integration-mail.xsd     
+                    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+	<!-- Polling driven -->
+	<!-- <mail:inbound-channel-adapter id="imapAdapter" store-uri="imaps://${email.imap.username}:${email.password}@${email.imap.domain}:993/inbox" 
+		channel="recieveEmailChannel" should-delete-messages="${email.imap.should.delete.messages}" 
+		auto-startup="${email.imap.auto.startup}" java-mail-properties="javaMailProperties"> 
+		<int:poller fixed-delay="${email.imap.fixed.delay}" time-unit="SECONDS"/> 
+		</mail:inbound-channel-adapter> <int:channel id="recieveEmailChannel"> <int:interceptors> 
+		<int:wire-tap channel="logger"/> </int:interceptors> </int:channel> <util:properties 
+		id="javaMailProperties"> <prop key="mail.imap.socketFactory.class">javax.net.ssl.SSLSocketFactory</prop> 
+		<prop key="mail.imap.socketFactory.fallback">false</prop> <prop key="mail.store.protocol">imaps</prop> 
+		<prop key="mail.debug">${email.debug}</prop> </util:properties> <int:logging-channel-adapter 
+		id="logger" level="DEBUG"/> <int:service-activator input-channel="recieveEmailChannel" 
+		ref="emailReceiverService" method="receive"/> <bean id="emailReceiverService" 
+		class="com.vini.service.EmailReceiverService"> </bean> -->
+
+	<!-- Mail service -->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="${email.smtp.host}" />
+		<property name="port" value="${email.smtp.port}" />
+		<property name="username" value="${email.username}" />
+		<property name="password" value="${email.password}" />
+		<property name="javaMailProperties">
+			<props>
+				<!-- Use SMTP-AUTH to authenticate to SMTP server -->
+				<prop key="mail.smtp.auth">${email.smtp.auth}</prop>
+				<!-- Use TLS to encrypt communication with SMTP server -->
+				<prop key="mail.smtp.starttls.enable">${email.smtp.starttls.enable}</prop>
+				<prop key="mail.debug">${email.debug}</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="customeMailMessage" class="org.springframework.mail.SimpleMailMessage">
+		<property name="from" value="${email.username}" />
+		<property name="subject" value="Survey Registration Successfull..!!" />
+		<property name="text">
+			<value>
+				<![CDATA[
+					Dear User,
+					
+					You have been successfully registered for the Survey.
+					Please find the link below to take the survey between %s to %s
+					
+					Survey Link: %s
+					
+					
+					Regards,
+					iSurvey Team
+				]]>
+			</value>
+		</property>
+	</bean>
+
+
+</beans>

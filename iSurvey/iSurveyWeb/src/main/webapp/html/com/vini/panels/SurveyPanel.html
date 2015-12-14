@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:wicket>
+<wicket:panel>
+	<form wicket:id="questionForm" style="width: 99%">
+		<!-- Question starts -->
+		<div class="survey-table">
+			<table>
+				<thead>
+					<tr>
+						<th width="80%"><span wicket:id="feedback"></span></th>
+						<th class="rotate"><div>
+								<span>Strongly Disagree</span>
+							</div></th>
+						<th class="rotate"><div>
+								<span>Disagree</span>
+							</div></th>
+						<th class="rotate"><div>
+								<span>No Opinion</span>
+							</div></th>
+						<th class="rotate"><div>
+								<span>Agree</span>
+							</div></th>
+						<th class="rotate"><div>
+								<span>Strongly Agree</span>
+							</div></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr wicket:id="questionView">
+						<td width="80%"><span wicket:id="question"></span></td>
+						<wicket:container wicket:id="options">
+							<td class="option"><input type="radio" wicket:id="1"></td>
+							<td class="option"><input type="radio" wicket:id="2"></td>
+							<td class="option"><input type="radio" wicket:id="3"></td>
+							<td class="option"><input type="radio" wicket:id="4"></td>
+							<td class="option"><input type="radio" wicket:id="5"></td>
+						</wicket:container>
+					</tr>
+				</tbody>
+				<!-- <tfoot>
+					<tr>
+      					<td colspan="6" ></td>
+      				</tr>
+				</tfoot>   -->
+			</table>
+			<div class="buttons-container-bottom-right">
+				<a wicket:id="next" class="button-link">Next</a>
+			</div>
+		</div>
+		<!-- Question ends -->
+	</form>
+</wicket:panel>
+</html>

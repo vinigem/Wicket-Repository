@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:wicket>
+<head>
+<meta charset="ISO-8859-1">
+</head>
+<wicket:extend>
+	<div id="envelope">
+		<header>
+			<h2>Link Survey</h2>
+			<p>Please link Question Set to the Survey.</p>
+		</header>
+		<hr>
+		<form wicket:id="form" style="width: 90%">
+			<label>Survey Name </label> <select wicket:id="surveys"></select>
+
+			<div wicket:id="questionSetContainer">
+				<span wicket:id="questionSets"> <wicket:container
+						wicket:id="questionSetListView" id="questionSetListView">
+						<input type="radio" wicket:id="questionSetId" />
+						<span wicket:id="questionSetName"></span>
+					</wicket:container>
+				</span>
+			</div>
+			<div class="buttons-container-bottom-right">
+				<a wicket:id="submit" id="submit" class="button-link">Link
+					Survey</a>
+			</div>
+		</form>
+	</div>
+
+</wicket:extend>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+					http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+                    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+                   	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<import resource="spring-email.xml" />
+	<context:component-scan base-package="com.vini" />
+	<mvc:annotation-driven />
+
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="persistenceUnit" />
+	</bean>
+
+	<!-- enable the configuration of transactional behavior based on annotations -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+	<context:property-placeholder
+		location="classpath*:emailConfiguration.properties" />
+
+	<!-- Spring security configurations -->
+	<!-- <security:http create-session="never" auto-config="true" > <security:remember-me/> 
+		<security:intercept-url pattern="/**"/> </security:http> <security:authentication-manager 
+		alias="authenticationManager"> <security:authentication-provider> TODO change 
+		this to reference our real user service <security:user-service> <security:user 
+		name="admin" password="admin" authorities="ROLE_ADMIN, ROLE_USER" /> <security:user 
+		name="user" password="user" authorities="ROLE_USER" /> </security:user-service> 
+		</security:authentication-provider> </security:authentication-manager> <security:global-method-security 
+		secured-annotations="enabled" /> -->
+
+</beans>

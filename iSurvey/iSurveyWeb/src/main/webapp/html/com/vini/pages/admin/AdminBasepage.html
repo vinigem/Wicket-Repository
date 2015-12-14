@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:wicket>
+<wicket:extend>
+	<div class="header">
+		<div class="logo">
+			<a wicket:id="homeLink"> <img alt="iSurvey"
+				src="images/iSurvey.png" width="300" height="90">
+			</a>
+		</div>
+	</div>
+
+	<div class="menu" id="menu">
+		<nav>
+			<ul class="menuH decor1">
+				<li><a href="#" class="arrow">Admin</a>
+					<ul>
+						<li><a wicket:id="createSurvey">Create Survey</a></li>
+						<li><a wicket:id="uploadQuestions">Upload Questions</a></li>
+						<li><a wicket:id="linkSurvey">Link Survey</a></li>
+						<li><a wicket:id="viewSummary">View Summary</a></li>
+					</ul></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="content">
+		<wicket:child />
+	</div>
+</wicket:extend>
+</html>

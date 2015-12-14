@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:wicket>
+<wicket:extend>
+	<div class="header">
+		<div class="logo">
+			<img alt="iSurvey" src="images/iSurvey.png" width="300" height="90">
+		</div>
+	</div>
+	<div class="content">
+		<div class="lg-container">
+			<h1>Admin Login</h1>
+			<form id="lg-form" name="lg-form" wicket:id="signInForm">
+
+				<div>
+					<label for="username">Username:</label> <input type="text"
+						name="username" wicket:id="username" placeholder="username" />
+				</div>
+
+				<div>
+					<label for="password">Password:</label> <input type="password"
+						name="password" wicket:id="password" placeholder="password" />
+				</div>
+
+				<div>
+					<a wicket:id="submit" class="button-link">Sign In</a>
+				</div>
+
+				<div wicket:id="rememberMeRow">
+					<input wicket:id="rememberMe" type="checkbox" /> Remember Me
+				</div>
+
+			</form>
+			<span wicket:id="feedback"></span>
+		</div>
+	</div>
+</wicket:extend>
+</html>

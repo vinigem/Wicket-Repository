@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.vini</groupId>
+	<artifactId>iSurvey</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>iSurvey</name>
+	<description>A Survey Application</description>
+
+	<properties>
+		<wicket.version>6.19.0</wicket.version>
+		<wicket.bootstrap.version>0.9.7</wicket.bootstrap.version>
+		<spring.version>4.1.6.RELEASE</spring.version>
+		<jpa.version>2.0-cr-1</jpa.version>
+		<hibernate.version>3.5.6-Final</hibernate.version>
+		<poi.version>3.8</poi.version>
+	</properties>
+
+	<modules>
+		<module>iSurveyCore</module>
+		<module>iSurveyWeb</module>
+	</modules>
+
+	<repositories>
+		<repository>
+			<id>googlecode</id>
+			<url>http://jqwicket.googlecode.com/svn/m2-repo/releases/</url>
+		</repository>
+	</repositories>
+
+</project>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:wicket>
+<head>
+<meta charset="ISO-8859-1">
+<title>iSurvey</title>
+</head>
+<body>
+	<span wicket:id="notification"></span>
+	<wicket:child />
+
+	<div class="footer">
+		<p>Developed by Vinit Kumar</p>
+	</div>
+
+	<!-- <span wicket:id="errorWindow"></span>
+		<span wicket:id="messageWindow"></span> -->
+	<span wicket:id="reportWindow"></span>
+
+	<div
+		style="position: fixed; bottom: 5px; right: 5px; z-index: 99999999;">
+		<a wicket:id="report"> <img src="images/message.png" alt="Message"
+			height="30px" width="30px" />
+		</a>
+	</div>
+
+	<div class="overlay" id="overlay">
+		<img src="images/please-wait.gif" alt="Please Wait" />
+	</div>
+</body>
+</html>
