@@ -1,0 +1,157 @@
+#body{background-image:url("images/background2.jpg");text-align:center;margin:0 auto;}
+
+#mainContainer{background-color: inherit; width: 80%; height: 37.5em; margin: 1em 1em;margin-left: auto;
+margin-right: auto; display: block; border-color: black; border-radius:8px; border-style: solid;}
+
+#headerContainer{background-color:#0000CD; height: 2.6em; width: 100%; border-top-style: solid;
+border-bottom-style: solid; border-color: black; border-width: 0.1em; color: white; border-radius:8px;}
+#headerContainer span:before{content:url(images/e-lib.png); margin-top: 0.2em;}
+
+#menuContainer{height: 1.5em; width: 99.8%; background: #D1EEEE; border-color: silver; border-style: solid; border-width: 0.1em; border-radius:8px;}
+
+#bodyContainer{background-color:white; height: 31.5em; width: 100%; border-top-style: solid;
+border-bottom-style:solid; ; border-color: black;border-width: 0.1em}
+
+#footerContainer{background-color:#0000CD; height: 1.5em;width: 100%; border-radius:8px;}
+
+#homePanel{margin:1em auto; border-style: ridge; width: 90%; height:20em; background-color:#D1EEEE; border-radius:150px;}
+
+
+#loginPanel{margin: 2em auto; border-style: solid; width:20em; height: 12em; border-color: black; background-color: #D1EEEE;border-radius:8px;}
+#loginPanel h2{background-color: white; margin-top: 0em; border-style: solid; border-width: 0.005em; border-radius:6px;}
+#loginPanel input{margin-top: 2em; background-color: #CAFF70;}
+#loginPanel select{margin-top: 2em; background-color: #CAFF70;}
+#loginPanel button{margin-top: 1em;}
+
+#profilePanel{margin: 2em auto; border-style: solid; width:30em; height: 15em; border-color: black; background-color: #D1EEEE;
+border-radius:8px; font-size: medium;font-weight: bold;font-family: serif;}
+#profilePanel h2{background-color: white; margin-top: 0em; border-style: solid; border-width: 0.005em; border-radius:6px; margin-bottom: 1em;}
+#profilePanel span{float:left;margin-left: 2em;}
+#profilePanel label{margin-left: 5em; float: left; width: 8em; text-align: left;}
+
+#searchOuterPanel{border: solid black 0.2em; margin: 1em auto; height:30em; width: 95%; background-color:#D1EEEE;	border-radius:8px; }
+#searchOuterPanel h2{background-color: white; margin-top: 0em;border-style: solid;border-width: 0.005em;border-radius:6px;}
+
+#searchPanel{margin:1em auto; border-style: ridge; width: 98%; background-color:#D1EEEE; border-radius:6px;}
+#searchPanel label{margin-left:1em;}
+#searchPanel input{background-color: #CAFF70;}
+#searchPanel select{background-color: #CAFF70;}
+
+#issuePanel{margin:1em auto; border-style: ridge; width: 90%; background-color:#D1EEEE; border-radius:6px;}
+#issuePanel h2{background-color: white; margin-top: 0em; border-style: solid; border-width: 0.005em; border-radius:6px;}
+#issueLabelHeader{background-color: #4169E1; width:85%; border-radius:8px;}
+#issueLabelHeader label{display:inline-block; width: 5em ;font-weight: bold; margin-left:0em; margin-right: 5em;}
+#listViewPanel{border-style: solid; width: 85%; border-radius:6px; border-color: maroon; border-width: 0.01em;}
+#listViewPanel span{display:inline-block; margin:0 1.8em; font-weight: bold; width: 6em;}
+#listViewPanel a:after{content:url("images/delete1.png")}
+
+#contactPanel{margin:1em auto; border-style: ridge; width: 50%; background-color:#D1EEEE; border-radius:100px;}
+
+#menuContainer a{margin:0.02em 1em 0.02em 1em; float: left; box-shadow:inset 0px 0px 0px 0px;height: 10px; background-color: #79BBFF;}
+#menuContainer .button:hover {background-color:#ce0100;}
+#menuContainer .button:active {position:relative; top:1px;}
+
+h1{margin: 0.2em 0 0.2em 0}
+h2{margin: 0.2em 0 0.2em 0}
+
+#registerPanel{border: solid black 0.2em; margin: 1em auto; height:30em; width: 30em; background-color:#D1EEEE;	border-radius:8px; }
+#registerPanel h2{background-color: white; margin-top: 0em;border-style: solid;border-width: 0.005em;border-radius:6px;}
+#registerPanel form{margin-top: 1em; width: 100%;}
+
+#addBookPanel{border: solid black 0.2em; margin: 1em auto; height:30em; width: 95%; background-color:#D1EEEE;	border-radius:8px; }
+#addBookPanel h2{background-color: white; margin-top: 0em;border-style: solid;border-width: 0.005em;border-radius:6px;}
+#addBookPanel form{margin-top: 1em; width: 100%;}
+
+a.add span:after{
+	content: url(images/plus1.png);}
+.delete span:after{
+	content: url(images/minus1.png);}
+
+#labelHeader{background-color: #4169E1; width:90%; border-radius:8px; }
+#labelHeader label{display:inline-block; width: 5em; margin:0 1.8em; font-weight: bold;}
+#bookRowPanel{width:90%; border-radius:8px; float: left; text-align: left;}
+#label{display: inline-block; width:1em;text-align: center;font-weight: bold;}
+#bookRowPanel input{width: 9.8em;}
+#buttonPanel{margin-right:2em; margin-top: 1em; float: right;}
+
+#historyPanel{border: solid black 0.2em; margin: 1em auto; height:30em; width: 95%; background-color:#D1EEEE;	border-radius:8px; }
+#historyPanel h2{background-color: white; margin-top: 0em;border-style: solid;border-width: 0.005em;border-radius:6px;}
+#historyPanel form{margin-top: 1em; width: 100%;}
+#labelHeader1{background-color: #4169E1; width:90%; border-radius:8px; text-align: left;}
+#labelHeader1 label{display:inline-block; width: 12em; font-weight: bold; margin-left: 0.2em;}
+#historyRowPanel{width:90%; border-radius:8px; float: left; text-align: left;}
+#historyRowPanel span{display:inline-block; width: 12em; }
+#label{display: inline-block; width:1em;text-align: center;font-weight: bold;}
+
+#returnPanel{margin: 2em auto; border-style: solid; width:20em; height: 12em; border-color: black; background-color: #D1EEEE;border-radius:8px;}
+#returnPanel h2{background-color: white; margin-top: 0em; border-style: solid; border-width: 0.005em; border-radius:6px;}
+#returnContainer{height: 6em;}
+#returnContainer input{background-color: #CAFF70; width: 8em;}
+#returnContainer select{background-color: #CAFF70; width: 8em;}
+#returnContainer span{margin-top:1em; margin-right: 0.5em; display: inline-block; width: 5em;}
+#returnPanel button{margin-top: 1em;}
+
+
+.button {-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background-color:#1874CD;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid black;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;	font-size:12px;	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #b23e35;height: 12px;}
+.button:hover {background-color:#ce0100;}
+.button:active {position:relative; top:1px;}
+
+#tableContainer{width: 90%; height: 20em;text-align:center;margin:0 auto;}
+
+#dataTable{margin: 0 auto; width: 95%; }
+table tr th { background-position: right; background-repeat:no-repeat;}
+
+table tr th.wicket_orderDown a:after{
+   content: url(images/arrow_down.png);}
+table tr th.wicket_orderUp a:after{
+   content: url(images/arrow_up.png);}
+table tr th.wicket_orderNone a:after{
+   content: url(images/arrow_off.png);}   
+
+table{border: solid; border-width: thin;}
+th{background-color: #4169E1; border: solid; border-width: thin;}
+th a{text-decoration: none; color: black;}
+td{border: solid; border-width: thin;}
+.even{background-color:#FFD39B;}
+.odd{background-color: white;}
+ 
+/*
+table.dataview { 
+        margin-bottom: 10px; 
+        border-bottom: 1px solid #0079d6; 
+        font-size: 1em; 
+        font-family: arial; 
+        width: 100%; 
+} 
+        
+table.dataview caption { text-align: left; } 
+table.dataview tr { padding-top: 2px; padding-bottom: 2px; } 
+table.dataview tr.even { background-color: #ffebcd; } 
+table.dataview tr.odd { background-color: #fff; } 
+table.dataview tr td { padding-left: 8px; padding-right: 30px; } 
+table.dataview tr th { color: black; padding-top: 3px; padding-bottom: 3px; padding-left: 8px; padding-right: 30px; background-color: #c1e4ff; border-bottom: 1px solid #0079d6; border-top: 1px solid #0079d6; text-align: left; white-space: nowrap; vertical-align: middle;} 
+
+table.dataview tr th { background-position: right; background-repeat:no-repeat; } 
+table.dataview tr th.wicket_orderDown { 
+        background-color: #87cbff; background-image: url(displaytag/img/arrow_down.png); } 
+table.dataview tr th.wicket_orderUp { 
+        background-color: #87cbff; background-image: url(displaytag/img/arrow_up.png); } 
+table.dataview tr th.wicket_orderNone { 
+        background-image: url(displaytag/img/arrow_off.png); 
+} 
+table.dataview tr th a { font-weight: normal; } 
+table.dataview #message { padding-left: 3px; } 
+table.dataview caption { padding-bottom: 2px; } */

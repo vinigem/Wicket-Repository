@@ -1,0 +1,55 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:head>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <wicket:link>
+    <link rel="stylesheet" type="text/css" href="style/lms.css"/>
+  </wicket:link>
+</wicket:head>
+<body id="body">
+<div id="mainContainer">
+<div id="headerContainer">
+<span></span>
+</div>
+<div id="menuContainer">
+<form wicket:id="form">
+<div wicket:id="menu">
+<a wicket:id="home" class="button">Home</a>
+<a wicket:id="profile" class="button">Profile</a>
+<a wicket:id="history" class="button">History</a>
+<a wicket:id="users" class="button">Manage Users</a>
+<a wicket:id="books" class="button">Manage Books</a>
+<a wicket:id="search" class="button">Search</a>
+<a wicket:id="return" class="button">Return</a>
+<a wicket:id="login" class="button">Login</a>
+<a wicket:id="logout" class="button">Logout</a>
+<a wicket:id="registration" class="button">Register</a>
+<a wicket:id="contact" class="button">Contact</a>
+</div>
+</form>
+</div>
+<div id="bodyContainer">
+<wicket:child>
+<div id="homePanel">
+<h2>About</h2>
+<pre>e-Library allows the users to search for books and issue a book online
+from anywhere and anytime.
+
+We have a large collection of books under various categories. This web site provides the users
+an easy way to search for their books and issue accordingly.
+
+This Web site is user friendly and has all the functionality of a Library.
+
+The users can login to their account if they are registered and view their profile and books
+they have issued in past.
+
+New Users can register and become a member and avail the facility of this Online Library.
+</pre>
+</div>
+</wicket:child>
+</div>
+<div id="footerContainer">Developed By Vinit Kumar</div>
+</div>
+</body>
+</html>
+
+

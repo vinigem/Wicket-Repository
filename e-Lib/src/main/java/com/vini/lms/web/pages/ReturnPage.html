@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket>
+<wicket:extend>
+<div id="returnPanel">
+<form wicket:id="returnForm">
+<h2>Return Books</h2>
+<div id="returnContainer">
+<span>User Id ::</span><input type="text" wicket:id="userId"/><br/>
+<span>Book    ::</span><select wicket:id="books"></select>
+</div>
+<a href="#" wicket:id="return" class="button">Return</a>
+</form>
+<div wicket:id="error"></div>
+</div>
+</wicket:extend>
+</html>

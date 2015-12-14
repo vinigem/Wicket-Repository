@@ -1,0 +1,24 @@
+<html xmlns:wicket>
+<wicket:extend>
+
+<div id="registerPanel">
+<h2>Registration Form</h2>
+<form wicket:id="registerForm">
+<pre style="font-family: inherit;">
+<label >Name     : </label><input wicket:id="name" type="text" /><br/>
+<label >Email    : </label><input wicket:id="emailId" type="text"/><br/>
+<label >Password : </label><input wicket:id="password" type="password"/><br/>
+<label >DOB      : </label><input wicket:id="dob" type="text"/><br/>
+<label >Gender   : </label><span wicket:id="gender"></span><br/>
+<label >Address  : </label><textarea rows="5" cols="25" wicket:id="address" ></textarea><br/>
+<label >Membership  : </label><select wicket:id="membership" ></select><br/>
+</pre>
+<a wicket:id="register" class="button">Register</a>
+</form>
+<div wicket:id="error"></div>
+</div>
+<style type="text/css">
+    .ui-datepicker {font-size: 11px; margin-left:10px }
+</style>
+</wicket:extend>
+</html>

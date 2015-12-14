@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket>
+<wicket:extend>
+<div id="addBookPanel">
+<form wicket:id="bookForm">
+<h2>Add Books</h2>
+<div wicket:id="bookContainer">
+<div id="labelHeader">
+<label>Name</label><label>Author</label><label>Publisher</label><label>Category</label><label>Price</label><label>Quantity</label>
+</div>
+<div id="bookRowPanel">
+<span wicket:id="listView">
+<span wicket:id="index" id="label">1.</span>
+<input type="text" wicket:id="name"/>
+<input type="text" wicket:id="author"/>
+<input type="text" wicket:id="publisher"/>
+<select wicket:id="category"></select>
+<input type="text" wicket:id="price"/>
+<input type="text" wicket:id="qty"/>
+</span>
+</div>
+<div id="linkPanel">
+<a href="#" wicket:id="add" class="add"><span></span></a>
+<a href="#" wicket:id="delete" class="delete"><span></span></a>
+</div>
+
+<!-- <a href="#" wicket:id="add" class="button">Add More</a> -->
+</div>
+<div id="buttonPanel">
+<a href="#" class="button" wicket:id="save">Save</a>
+</div>
+</form>
+</div>
+<div wicket:id="error"></div>
+</wicket:extend>
+</html>

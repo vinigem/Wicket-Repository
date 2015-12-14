@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket>
+<wicket:extend>
+<div id="issuePanel">
+<form wicket:id="issueForm">
+<h2>Issue Books</h2>
+<div id="bookContainer" wicket:id="bookContainer">
+<div id="issueLabelHeader">
+<label>Name</label><label>Author</label><label>Publisher</label><label>Category</label>
+</div>
+<div id="listViewPanel" wicket:id="listView">
+<span wicket:id="name"></span>
+<span wicket:id="author"></span>
+<span wicket:id="publisher"></span>
+<span wicket:id="category"></span>
+<a href="#" wicket:id="remove"></a>
+</div>
+</div>
+<a href="#" wicket:id="issue" class="button">Issue</a>
+</form>
+<div wicket:id="error"></div>
+</div>
+</wicket:extend>
+</html>

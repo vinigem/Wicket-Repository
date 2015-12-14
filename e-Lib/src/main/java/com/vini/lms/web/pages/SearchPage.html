@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket>
+<wicket:head>
+<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#dataTable').dataTable();
+			} );
+		</script>
+</wicket:head>
+<wicket:extend>
+<div id="searchOuterPanel">
+<form wicket:id="searchForm">
+<h2>Search Books</h2>
+<div id="searchPanel">
+<label>Name :</label>
+<input type="text" wicket:id="name"/>
+<label>Author :</label>
+<input type="text" wicket:id="author"/>
+<label>Publisher :</label>
+<input type="text" wicket:id="publisher"/>
+<label>Category :</label>
+<select wicket:id="category"></select>
+</div>
+
+<div wicket:id="error"></div>
+
+<div id="tableContainer" wicket:id="tableContainer">
+<table wicket:id="bookTable" cellpadding="0" cellspacing="0" border="0" id="dataTable" width="100%"></table>
+</div>
+<br/>
+<div wicket:id="buttonContainer">
+<a href="#" wicket:id="issue" class="button">Issue Books</a>
+</div>
+</form> 
+</div>
+</wicket:extend>
+</html>
